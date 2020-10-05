@@ -6,6 +6,6 @@ steps:
     deployTool: 'mtaDeployPlugin'
     deployType: 'standard'
     cloudFoundry:
-      org: '86f990ac-3a9d-420b-91b7-b7dbdb38dd25'
+      org: 'sbb-e1n9sandb'
       space: 'G1_General'
       credentialsId: '8a147d87-35b9-447f-9388-4f71ffdc0fa2'
