@@ -1,9 +1,10 @@
 @Library ('piper-lib-os') _
 node() {
-  triggers {
-      // Once a minute
-      pollSCM('* * * * *')
-  }
+  properties([
+    // Once a minute
+    pipelineTriggers([pollSCM('* * * * *')])
+  ])
+  
   stage('prepare'){
     checkout scm
     setupCommonPipelineEnvironment script:this
