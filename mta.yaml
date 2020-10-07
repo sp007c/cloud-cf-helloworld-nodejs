@@ -7,3 +7,6 @@ modules:
   - name: piper.node.hello.world
     type: nodejs
     path: .
+    parameters:
+      memory: 64MB
+      disk-quota: 120MB
